@@ -7,7 +7,8 @@ class Rectangle {
   }
   isSquare() {
 
-    return true;
+    if (this.lenght === this.width)
+      return true;
   }
   area() {
 
@@ -24,7 +25,7 @@ class Rectangle {
 
 let tri = new Rectangle(5, 10)
 
-tri.isSquare();// returns True
+tri.isSquare();
 tri.area(); // supposed to return 50 but instead it returned NaN 
 tri.perimeter();// NaN
 
@@ -39,24 +40,30 @@ class Triangle {
     this.sideC = sideC;
   }
   isEquilateral() {
-    return true;
 
+    if (this.sideA === this.sideB && this.sideB === this.sideC) {
+      return true;
+    } else { return false; }
   }
+
+
   isIsosceles() {
-    return true;
+    if (this.sideA === this.sideB || this.sideB === this.sideC)
+      return true;
   }
   area() {
     return this.sideC * this.sideA / 2
   }
   isObtuse() {
-    return true;
+    if (this.sideA || this.sideB || this.sideC > 90) // was not so clear 
+      return true;
   }
 
   let tri = new Triangle(4, 2, 2)
-tri.isEquilateral();// True
-tri.isIsosceles(); // True 
+tri.isEquilateral();
+tri.isIsosceles();
 tri.area();// NaN 
-tri.isObtuse();// True
+tri.isObtuse();// 
 
 
 
@@ -69,7 +76,7 @@ class LineSegment {
 
   }
   length() {
-    return Math.sqrt((x1 - x2) + (y2 - y1))
+    return Math.sqrt((x1 - x2) + (y2 - y1)) // I tried googling but it did not work ;(
   }
 }
 
