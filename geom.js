@@ -34,7 +34,21 @@ class Triangle {
     this.sideB = sideB;
     this.sideC = sideC;
   }
+  get isEquilateral(){
+    if (this.sideA === this.saidB & this.sideA === this.sideC)
+    return true;
+ }
+ get isIsosceles(){
+    if (this.sideA === this.sideB & this.sideA !== this.sideC)
+ return true;
+ }
 }
+
+const resultIso = new Triangle (2,2,3);
+console.log(resultIso.isIsosceles)
+
+const checkIsEqu = new Triangle (3, 3, 3);
+console.log(checkIsEqu.isEquilateral) // I got undefined on this
 
 
 class LineSegment {
