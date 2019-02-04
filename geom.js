@@ -42,29 +42,3 @@ module.exports = {
   Triangle: Triangle,
   LineSegment: LineSegment
 }
-
-
-class Animal {
-  constructor(type, age, sound) {
-    this.type = type;
-    this.age = age;
-    this.sound = sound;
-  }
-
-  getOlder() {
-    this.age++;
-    console.log(this.age);
-  }
-
-  makeSound() {
-    console.log(this.sound + "! Hello, I'm a " + this.type + ". And I'm " + this.age + " years old.");
-
-  }
-}
-
-let dog = new Animal("Dog", 1, "Woof");
-console.log(dog);
-
-
-let cat = new Animal("Cat", 2, "Meow");
-console.log(cat);
