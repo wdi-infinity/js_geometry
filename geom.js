@@ -3,8 +3,22 @@ class Rectangle {
     this.length = length;
     this.width = width;
   }
+isSquare(){
+if(this.length != this.width){
+return false;
+}
+else {
+return true;
+}
+}
+area(){
+return "Area is " + (this.length * this.width)
 }
 
+perimeter(){
+return "Perimeter is " + ((this.length + this.width) * 2)
+}
+}
 
 class Triangle {
   constructor(sideA, sideB, sideC){
@@ -12,6 +26,29 @@ class Triangle {
     this.sideB = sideB;
     this.sideC = sideC;
   }
+isEquilateral(){
+if (this.sideA ==  this.sideB  ){
+if ( this.sideB == this.sideC){
+return true;
+}
+
+}
+else return false;
+}
+isIsosceles(){
+if (this.sideA ===  this.sideB || this.sideB === this.sideC || this.sideA === this.sideC  ){
+return true;
+}
+else return false;
+}
+isObtuse(){
+if ( ( ((this.sideA * this.sideA) + (this.sideB * this.sideB) > (this.sideC * this.sideC)) || ((this.sideA * this.sideA) + (this.sideC * this.sideC) > (this.sideB * this.sideB)) || ((this.sideB * this.sideB) + (this.sideC * this.sideC) > (this.sideA * this.sideA)) ) || ( ( x>z && y>z ) || ( x>y && z>y ) || ( y>x && z>x ) ) ) {
+return true;
+}
+}
+area(){
+return ((this.sideA + this.sideB + this.sideC )/2)
+} 
 }
 
 
