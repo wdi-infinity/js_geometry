@@ -3,7 +3,7 @@ var Rectangle = Geom.Rectangle;
 var Triangle = Geom.Triangle;
 var LineSegment = Geom.LineSegment;
 
-describe('Rectangle', function() {
+describe('Rectangle', function(height, width) {
   it('is a class that is defined', function () {
     expect(Rectangle).toBeDefined()
   })
@@ -80,3 +80,32 @@ describe('LineSegment', function() {
     expect(line.length()).toEqual(5);
   });
 });
+
+
+var y = 0 ;
+var x = 0 ;
+class ATM {
+    constructor (type, money , transactionHistory ){
+        this.type=type;
+        this.money= money ;
+        this.transactionHistory = transactionHistory 
+         
+
+    }
+    withdraw() {
+
+        this.money = this.money-1 ;
+         x-- ;
+    }
+ deposit(){
+    this.money=this.money+1
+       y++ ;
+}
+showBalance(){
+    consol.log(this.money)
+}
+transaction(){
+    console.log(" Increased by " + y + " Decreased by " + x  )
+    
+}
+}
