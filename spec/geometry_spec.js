@@ -4,6 +4,13 @@ var Triangle = Geom.Triangle;
 var LineSegment = Geom.LineSegment;
 
 describe('Rectangle', function() {
+      //foo
+  // beforeEach(function(){
+  //  foo=1
+  // });
+  // afterEach(function(){
+  //  foo=0;
+  // });
   it('is a class that is defined', function () {
     expect(Rectangle).toBeDefined()
   })
