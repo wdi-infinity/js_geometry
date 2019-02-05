@@ -5,19 +5,17 @@ class Rectangle {
     this.width = width;
   }
 
-  isSquare(lengthNum, widthNum) {
-    if (lengthNum === widthNum)
-      //if ( this.length === this.width)
-      return true;
+  isSquare() {
+    if (this.length === this.width) return true;
   }
 
-  area(lengthNum, widthNum) {
-    let area = lengthNum * widthNum;
+  area() {
+    let area = this.length * this.width;
     return area;
   }
 
-  perimeter(lengthNum, widthNum) {
-    let perimeter = 2 * (lengthNum + widthNum);
+  perimeter() {
+    let perimeter = 2 * (this.length + this.width);
     return perimeter;
   }
 }
@@ -30,14 +28,22 @@ class Triangle {
     this.sideC = sideC;
   }
 
-  isEquilateral(first, second, third) {
-    if (first === second && first === third && second === third) {
+  isEquilateral() {
+    if (
+      this.sideA === this.sideB &&
+      this.sideA === this.sideC &&
+      this.sideB === this.sideC
+    ) {
       return true;
     }
   }
 
-  isIsosceles(first, second, third) {
-    if (first === second || first === third || second === third) {
+  isIsosceles() {
+    if (
+      this.sideA === this.sideB ||
+      this.sideA === this.sideC ||
+      this.sideB === this.sideC
+    ) {
       return true;
     }
   }
