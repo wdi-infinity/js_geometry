@@ -6,6 +6,25 @@ class Rectangle {
 }
 
 
+isSquare(){
+  let rect = {
+    left: 5,
+    top: 5,
+    right: 15,
+    bottom: 15
+   }
+  }
+  area(){
+  console.log( this.length * this.width )
+  }
+  
+  perimeter(){
+  console.log( this.length * this.width )
+  
+   }
+  }
+  
+
 class Triangle {
   constructor(sideA, sideB, sideC){
     this.sideA = sideA;
