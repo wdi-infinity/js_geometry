@@ -3,7 +3,20 @@ class Rectangle {
     this.length = length;
     this.width = width;
   }
+ checkIsSqure(){
+ this.lengh === this.width;
+ return true
 }
+calcArea (){
+    this.lenght = this.lenght *this.Width;
+       
+}
+calcperimeter(){
+this.lenght = 2*(this.length + this.width);
+ }
+}
+  
+
 
 
 class Triangle {
@@ -12,7 +25,21 @@ class Triangle {
     this.sideB = sideB;
     this.sideC = sideC;
   }
+  isEquilateral(){
+  
+  if(this.sideA === this.sideB === this.sideC) {
+
+  return True
 }
+    
+}
+isIsosceles() {
+if(this.sideA === this.sideB !== this.sideC){
+  return True 
+}
+  
+}
+
 
 
 class LineSegment {
