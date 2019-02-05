@@ -3,6 +3,20 @@ class Rectangle {
     this.length = length;
     this.width = width;
   }
+  isSquare(){
+    if(this.length === this.width){
+      return "the rectangle is square"
+    }
+    else{
+      return "it is not a square"
+    }
+  }
+  area(){
+    return this.length * this.width;
+  }
+  perimeter(){
+    return 2(this.length + this.width);
+  }
 }
 
 
@@ -12,6 +26,26 @@ class Triangle {
     this.sideB = sideB;
     this.sideC = sideC;
   }
+  isEquilateral(){
+    if (SideA === sideB && sideB === sideC){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+  isIsosceles(){
+    if (sideA === sideB || sideB === sideC || sideA === sideC){
+      return true
+    }
+    else{
+      return false
+    }
+  }
+  area(){
+
+  }
+
 }
 
 
@@ -22,6 +56,7 @@ class LineSegment {
     this.x2 = x2;
     this.y2 = y2;
   }
+  
 }
 
 // NOTE: DO NOT REMOVE OR ALTER
@@ -30,3 +65,6 @@ module.exports = {
   Triangle: Triangle,
   LineSegment: LineSegment
 }
+
+
+
