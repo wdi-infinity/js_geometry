@@ -47,7 +47,7 @@ class Triangle {
   // I used Math.sqrt() to find the square root
   area(){
     let s = (this.sideA + this.sideB + this.sideB)/2
-    let area = s(s-this.sideA)*(s-this.sideB)*(s-this.sideC);
+    let area = s*(s-this.sideA)*(s-this.sideB)*(s-this.sideC);
     return Math.sqrt(area);
   }
 
