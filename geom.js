@@ -1,26 +1,31 @@
 class Rectangle {
-  constructor(length, width) {
-    this.length = length;
-    this.width = width;
+  constructor(a, b) {
+    this.length = a;
+    this.width = b;
+    this.area = a * b;
+    this.perimeter = 2 * (a + b);
   }
 }
 
 
 class Triangle {
-  constructor(sideA, sideB, sideC){
-    this.sideA = sideA;
-    this.sideB = sideB;
-    this.sideC = sideC;
+  constructor(a, b, c){
+    this.sideA = a;
+    this.sideB = b;
+    this.sideC = c;
+    this.area = 0.5*a * b*c
+    this.perimeter = a + b +cancelAnimationFrame;
   }
 }
 
 
 class LineSegment {
-  constructor(x1, y1, x2, y2){
-    this.x1 = x1;
-    this.y1 = y1;
-    this.x2 = x2;
-    this.y2 = y2;
+  constructor(a, b, c, d){
+    this.x1 = a;
+    this.y1 = b;
+    this.x2 = c;
+    this.y2 = d;
+    this.area = Math.sqrt(2**(a-b)+2**(c-d));
   }
 }
 
